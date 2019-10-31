@@ -41,13 +41,13 @@ body {
 .navbar-links ul li a {
   text-decoration: none;
   color: #474747;
-  padding: 1rem;
+  padding: .5rem;
   font-size: 14px;
   display: block;
 }
 
 .navbar-links ul li:hover {
-  background-color: #555;
+  background-color: #00ffff4d;
 }
 
 .toggle-button {
@@ -115,7 +115,7 @@ main {
 }
 
 .project-con {
-  margin: 2rem 0 0 0;
+  margin: 1rem 0 0 0;
   padding: 3rem 0;
 }
 
