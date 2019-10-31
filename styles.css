@@ -115,7 +115,8 @@ main {
 }
 
 .project-con {
-  margin: 3rem 0 0 0;
+  margin: 2rem 0 0 0;
+  padding: 3rem 0;
 }
 
 .box-con {
@@ -215,7 +216,7 @@ footer{
 }
 
 .social-media-icons div i {
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .copyright-div {
