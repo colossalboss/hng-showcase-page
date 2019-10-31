@@ -348,3 +348,9 @@ footer{
     padding: 1em;
   }
 }
+
+@media screen and (max-width: 330px) {
+  .brand-title img {
+    width: 85%;
+  }
+}
