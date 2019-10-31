@@ -1,0 +1,349 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans';
+}
+
+.navbar {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.navbar .nav-con {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #474747;
+  margin: auto;
+}
+
+.brand-title {
+  font-size: 1.5rem;
+  margin: .5rem;
+}
+
+.navbar-links ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navbar-links ul li {
+  list-style: none;
+}
+
+.navbar-links ul li a {
+  text-decoration: none;
+  color: #474747;
+  padding: 1rem;
+  font-size: 14px;
+  display: block;
+}
+
+.navbar-links ul li:hover {
+  background-color: #555;
+}
+
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #333;
+  border-radius: 10px;
+}
+
+#join-link {
+  background-color: #00AEFF;
+  color: #fff;
+  border-radius: 4px;
+}
+
+/* Main styles */
+
+.intro-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.intro-box {
+  width: 45%;
+}
+
+.intro-box img {
+  width: 100%;
+}
+
+.intro-txt {
+  width: 95%;
+  margin: 0 0 0 4rem;
+}
+
+.intro-txt h2 {
+  color: #084482;
+  font-size: 40px;
+}
+
+.intro-txt p {
+  color: #474747;
+  font-size: 24px;
+}
+
+main {
+  width: 100%;
+  margin: auto;
+}
+
+.projects .project-con:nth-child(even) {
+  background: rgba(196, 196, 196, 0.1);
+}
+
+.project-con {
+  margin: 3rem 0 0 0;
+}
+
+.box-con {
+  width: 90%;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.gate-img-div {
+  width: 100%;
+  margin: auto;
+}
+
+.gate-img-div img {
+  width: 100%;
+  margin: auto;
+}
+
+.box {
+  width: 45%;
+  margin: auto;
+}
+
+.txt p {
+  font-size: 20px;
+  line-height: 150.2%;
+  font-size: 20px;
+  color: #333333;
+  font-family: 'Open Sans';
+}
+
+.btn-area input {
+  padding: 0.3rem;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 14px;
+  background-color: #00AEFF;
+}
+
+footer{
+  width: 100%;
+  padding-top: 3em;
+  background: #FAFAFA;
+}
+
+.footer-div {
+  width: 85%;
+  margin: auto;
+}
+
+.footer-items {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: .5rem;
+  justify-content: space-between;
+}
+
+.footer-item {
+  width: 25%;
+  color: #00AEFF;
+}
+
+.footer-item ul {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-item ul li {
+  list-style: none;
+  margin: .5rem 0;
+  color: #00AEFF;
+}
+
+.footer-item ul li a {
+  text-decoration: none;
+  color: #00AEFF;
+
+}
+
+#black a,
+#black-txt a {
+  color: #737373;
+}
+
+.social-media-icons {
+  display: flex;
+}
+
+.social-media-icons div {
+  padding: 1rem;
+  margin: 0.3rem;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.social-media-icons div i {
+  font-size: 14px;
+}
+
+.copyright-div {
+  width: 100%;
+  text-align: center;
+}
+
+.copyright-div p {
+  padding: 1rem;
+  color: #8898AA;
+  font-size: 20px;
+}
+
+/* End of Main styles */
+
+@media (max-width: 800px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar {
+    position: relative;
+  }
+
+  .intro-txt p {
+    font-size: 20px;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar .nav-con {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    text-align: center;
+  }
+
+  .navbar-links ul li a {
+    padding: .5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .txt p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 706px) {
+  main {
+    width: 100%;
+  }
+
+  .intro-flex {
+    flex-direction: column;
+  }
+
+  .intro-box {
+    width: 80%;
+  }
+
+  .intro-txt {
+    width: 100%;
+  }
+
+  .intro-txt {
+    margin: 0;
+  }
+
+  .intro-img img {
+    display: none;
+  }
+
+  .box-con {
+    flex-direction: column;
+  }
+
+  .box {
+    width: 80%;
+  }
+
+  footer {
+    padding: 2em;
+  }
+
+  .footer-div {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 656px) {
+  footer {
+    padding: 2em;
+  }
+
+  .footer-div {
+    width: 95%;
+    margin: auto;
+  }
+
+  .footer-item {
+    width: 50%;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer-div {
+    width: 95%;
+    margin: auto;
+  }
+
+  .footer-item {
+    width: 100%;
+  }
+
+  footer {
+    padding: 1em;
+  }
+}
