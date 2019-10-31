@@ -41,8 +41,8 @@ body {
 .navbar-links ul li a {
   text-decoration: none;
   color: #474747;
-  padding: .5rem;
-  font-size: 14px;
+  padding: .5rem 1rem;
+  font-size: 16px;
   display: block;
 }
 
@@ -74,6 +74,11 @@ body {
   border-radius: 4px;
 }
 
+.container {
+  width: 90%;
+  margin: auto;
+}
+
 /* Main styles */
 
 .intro-flex {
@@ -92,18 +97,18 @@ body {
 
 .intro-txt {
   width: 95%;
-  margin: 0 0 0 4rem;
+  margin: 0 0 0 5rem;
 }
 
-.intro-txt h2 {
+.intro-txt h1 {
   color: #084482;
   font-size: 40px;
-  margin-top: 0;
 }
 
 .intro-txt p {
   color: #474747;
   font-size: 22px;
+  line-height: 33px;
 }
 
 main {
@@ -148,6 +153,12 @@ main {
 .box {
   width: 45%;
   margin: auto;
+}
+
+.box h2 {
+  color: #084482;
+  font-size: 40px;
+  font-weight: 600;
 }
 
 .txt p {
@@ -242,7 +253,13 @@ footer{
 
 /* End of Main styles */
 
-@media (max-width: 800px) {
+@media screen and (max-width: 990px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
   .toggle-button {
     display: flex;
   }
