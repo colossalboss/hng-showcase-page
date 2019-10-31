@@ -201,6 +201,7 @@ footer{
 
 #black a,
 #black-txt a {
+  text-decoration: none;
   color: #737373;
 }
 
