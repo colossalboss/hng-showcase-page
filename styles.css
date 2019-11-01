@@ -271,6 +271,11 @@ footer{
     position: relative;
   }
 
+  #join-link {
+    width: 18%;
+    margin: auto;
+  }
+
   .intro-txt p {
     font-size: 20px;
   }
@@ -349,9 +354,9 @@ footer{
   }
 }
 
-@media screen and (max-width: 656px) {
+@media screen and (max-width: 750px) {
   footer {
-    padding: 2em;
+    padding: 3em;
   }
 
   .footer-div {
@@ -359,8 +364,37 @@ footer{
     margin: auto;
   }
 
+  .footer-items {
+    justify-content: space-around;
+  }
+
+  .footer-item {
+    width: 30%;
+  }
+}
+
+
+@media screen and (max-width: 656px) {
+  #join-link {
+    width: 30%;
+  }
+
+  footer {
+    padding: 2em;
+  }
+
   .footer-item {
     width: 50%;
+  }
+}
+
+@media (max-width: 430px) {
+  .box {
+    width: 100%;
+  }
+
+  footer {
+    padding: 0.5rem;
   }
 }
 
